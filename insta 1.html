@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+<style>
+  .bb1{
+    border: 1px solid;
+       padding-left: 20px;
+       padding-right: 50px;
+       padding-top: 70px;
+       padding-bottom: 300px;
+       height: 150px;
+       width: 280px;
+
+       
+
+  }
+</style>
+
+</head>
+<body>
+    <div class="bb1">
+    <center>
+          <div class="b"><a href="" ><i class="fa-solid fa-user"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="p1">Tom and Jerry</a><br><br><br>
+            <video src="C:\Users\Lakshmi\Downloads\videoplayback.mp4"autoplay controls muted height="300" width="300"></video>
+
+  
+          </div>
+          <div class="post-container">
+        
+            <div class="b">
+                <div class="interaction-button" onclick="likePost()">
+                    <span class="interaction-icon">❤</span>
+                    <span id="likeCount">0</span>
+                </div>
+        
+                <div class="interaction-button" onclick="sharePost()">
+                    <span class="interaction-icon">🔗</span> Share
+                </div>
+        
+                <div class="interaction-button"onclick="commentPost()">
+                    <span class="interaction-icon"></span> Comment
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            let likeCount = 0;
+        
+            function likePost() {
+                likeCount++;
+                document.getElementById('likeCount').innerText = likeCount;
+            }
+        
+            function sharePost() {
+                // Implement share functionality
+                alert('Share functionality coming soon!');
+            }
+        
+            function commentPost() {
+                // Implement comment functionality
+                alert('Comment functionality coming soon!');
+            }
+        </script>
+        
+      
+          
+    </center>
+    </div>
+</body>
+</html>
